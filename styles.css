@@ -6,10 +6,13 @@ body{
 }
 #wrapper, header{
   max-width: 750px;
-  margin: auto auto;
+  margin: auto auto 150px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   color: rgba(229, 229, 229, 0.9);
+}
+header{
+  margin: auto auto;
 }
 a{
   text-decoration: none;
@@ -111,12 +114,12 @@ ul{
     font-size: 100%;
   }
   #wrapper{
-    margin: 50px auto;
+    margin: 50px auto 150px;
   }
 }
 @media (min-width: 600px){
   #wrapper{
-    margin: 100px auto;
+    margin: 100px auto 150px;
     padding: 40px 100px;
   }
   .active img {
