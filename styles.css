@@ -1,0 +1,145 @@
+body{
+  background: #000 url("images/camping.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: "Papyrus", Helvetica, sans-serif;
+}
+#wrapper, header{
+  max-width: 750px;
+  margin: auto auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: rgba(229, 229, 229, 0.9);
+}
+a{
+  text-decoration: none;
+  color: rgba(229, 229, 229, 0.9);
+}
+h1{
+  font-size: 220%;
+  text-align: center;
+  padding: 20px 0 0;
+}
+h2{
+  font-size: 160%;
+}
+h3, h4{
+  font-size: 140%;
+}
+ul{
+  list-style: none;
+  text-align: center;
+  padding: 15px 0 0;
+}
+.rightText{
+  text-align: right;
+  margin: 0 20px 0 0;
+}
+.bottom{
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+}
+.inline li{
+  display: inline;
+  padding:  0.5% 0.5%;
+  font-size: 65%;
+}
+.notactive i{
+  color: rgba(229, 229, 229, 0.9);
+}
+.active i{
+  color: rgba(41, 83, 0, 0.9);
+  text-shadow: 0px 1px 12px #caf085;
+}
+.notactive img {
+  display: none;
+  width: 10%;
+}
+.active img {
+  display: inline;
+  float: left;
+  width: 100%;
+  border-radius: 10px;
+  margin: 15px 0 0;
+}
+.pause{
+  background: url("images/play.png") no-repeat scroll 0 0 transparent;
+}
+.play{
+  background: url("images/pause.png") no-repeat scroll 0 0 transparent;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.arrows{
+  height: 50px;
+  width: 50px;
+  border: none;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.0);
+  color: rgba(229, 229, 229, 0.9);
+  outline: 0;
+}
+.clickable:hover{
+  cursor: pointer;
+  text-shadow: 0px 1px 12px #caf085;
+}
+#pauseButton{
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-size: 100% 100%;
+  padding: 0 20px 0 0;
+  margin: 3px 0 0;
+  border-radius: 5px;
+  outline: 0;
+}
+#pauseButton:hover{
+  box-shadow: 0px 1px 12px #caf085;
+}
+
+@media (min-width: 300px){
+  .inline li {
+    font-size: 80%;
+  }
+}
+@media (min-width: 400px){
+  .inline li {
+    font-size: 100%;
+  }
+  #wrapper{
+    margin: 50px auto;
+  }
+}
+@media (min-width: 600px){
+  #wrapper{
+    margin: 100px auto;
+    padding: 40px 100px;
+  }
+  .active img {
+    border: 20px solid rgba(0, 0, 0, 0.6);
+  }
+  .rightText{
+    margin: 0 50px 0 0;
+  }
+  h1{
+    text-align: left;
+    padding: 20px 0 0 50px;
+  }
+}
+@media (min-width: 750px){
+  .inline li {
+    font-size: 140%;
+  }
+}
+@media (min-width: 1000px){
+  h1 {
+    font-size: 300%;
+  }
+  h2, h3, h4{
+    font-size: 200%;
+  }
+}
